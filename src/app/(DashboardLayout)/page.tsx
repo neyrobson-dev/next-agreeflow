@@ -25,6 +25,7 @@ const Dashboard = () => {
   if (!isLoaded) {
     return <div>Carregando...</div>;
   }
+
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
       <Box>
