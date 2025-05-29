@@ -2,6 +2,8 @@
 import { baselightTheme } from "@/utils/theme/DefaultColors";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import { ClerkProvider } from "@clerk/nextjs";
+import { ptBR } from "@clerk/localizations";
 import "./global.css";
 
 export default function RootLayout({
@@ -14,7 +16,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider theme={baselightTheme}>
           <CssBaseline />
-          {children}
+          <ClerkProvider localization={ptBR}>{children}</ClerkProvider>
         </ThemeProvider>
       </body>
     </html>
