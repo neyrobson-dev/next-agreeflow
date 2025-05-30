@@ -25,7 +25,6 @@ const Header = ({ toggleMobileSidebar }: ItemType) => {
   // const lgDown = useMediaQuery((theme) => theme.breakpoints.down('lg'));
 
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
-    boxShadow: "none",
     background: theme.palette.background.paper,
     justifyContent: "center",
     backdropFilter: "blur(4px)",
@@ -39,7 +38,7 @@ const Header = ({ toggleMobileSidebar }: ItemType) => {
   }));
 
   return (
-    <AppBarStyled position="sticky" color="default">
+    <AppBarStyled position="sticky" color="default" elevation={0}>
       <ToolbarStyled>
         <IconButton
           color="inherit"

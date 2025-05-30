@@ -6,7 +6,7 @@ import DashboardCard from "@/app/(DashboardLayout)/components/shared/DashboardCa
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
-const Contratos = () => {
+const People = () => {
   const { user, isLoaded } = useUser();
   const router = useRouter();
 
@@ -20,12 +20,12 @@ const Contratos = () => {
     return <div>Carregando...</div>;
   }
   return (
-    <PageContainer title="Contratos" description="this is Contratos">
-      <DashboardCard title="Contratos">
-        <Typography>This is a Contratos</Typography>
+    <PageContainer title="Pessoas" description="this is Pessoas">
+      <DashboardCard title="Pessoas">
+        <Typography>This is a Pessoas</Typography>
       </DashboardCard>
     </PageContainer>
   );
 };
 
-export default Contratos;
+export default People;
