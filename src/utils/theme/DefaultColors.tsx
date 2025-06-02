@@ -130,7 +130,6 @@ const baselightTheme = createTheme({
           boxShadow:
             "rgb(145 158 171 / 30%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px !important",
         },
-
       },
     },
     MuiCard: {
@@ -140,8 +139,29 @@ const baselightTheme = createTheme({
         },
       },
     },
-
-
+    MuiTableHead: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#F3F4F6",
+          ".MuiTableCell-root": {
+            color: "#374151",
+          },
+          borderBottom: "none",
+          "& .MuiTableCell-root": {
+            borderBottom: "none",
+            fontSize: "12px",
+            fontWeight: 600,
+            lineHeight: 1,
+            letterSpacing: 0.5,
+            textTransform: "uppercase",
+          },
+          "& .MuiTableCell-paddingCheckbox": {
+            paddingTop: 4,
+            paddingBottom: 4,
+          },
+        },
+      },
+    },
   },
 });
 
