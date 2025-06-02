@@ -5,6 +5,7 @@ import PageContainer from "@/app/(DashboardLayout)/components/container/PageCont
 import DashboardCard from "@/app/(DashboardLayout)/components/shared/DashboardCard";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
+import FullCalendar from "@/app/(DashboardLayout)/components/shared/FullCalendar";
 
 const Schedule = () => {
   const { user, isLoaded } = useUser();
@@ -23,6 +24,7 @@ const Schedule = () => {
     <PageContainer title="Agenda" description="this is Agenda">
       <DashboardCard title="Agenda">
         <Typography>This is a Agenda</Typography>
+        <FullCalendar />
       </DashboardCard>
     </PageContainer>
   );
